@@ -20,7 +20,7 @@ function App() {
   // Wishlist: Notifikation
 
   useEffect(() => {
-    socket.current = io("localhost:8000");
+    socket.current = io("https://waiting-list-back-tgt-test.herokuapp.com/");
 
     socket.current.on("connect", () => {
       console.log("Connected");
